@@ -11,7 +11,7 @@ Table of content
 
 ### General info
 
-Readability grading application written in C. The aim of the program is to grade any texts entered by the user. There are three different outputs of the program depending on the grading index:
+Readability grading application written in C. The aim of the program is to grade any texts entered by the user. There are three different outputs of the program depending on the grading score:
  * Before Grade 1
  * The Grade Index
  * Grade 16+ 
