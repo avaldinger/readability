@@ -1,4 +1,4 @@
-Readability score 
+Readability score 📖 
 ==== 
 
 Application written in C as part of the [![CS50 Badge](https://img.shields.io/badge/-CS50-red)](https://cs50.harvard.edu) class problem sets to grade the readability of different texts.
