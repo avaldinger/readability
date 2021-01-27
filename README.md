@@ -16,7 +16,7 @@ Readability grading application written in C. The aim of the program is to grade
  * The Grade Index
  * Grade 16+ 
 
-The grade is calculated by the Coleman-Liau formula as it follows: 0.0588 * L - 0.296 * S - 15.8, where L is the average number of letters per 100 words in the text, and S is the average number of sentences per 100 words in the text. 
+The grade is calculated by the Coleman-Liau formula as it follows: `0.0588 * L - 0.296 * S - 15.8`, where `L` is the average number of letters per 100 words in the text, and `S` is the average number of sentences per 100 words in the text. 
 
 ### Setup
 
