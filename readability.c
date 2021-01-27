@@ -24,11 +24,11 @@ int main(void)
     // Calculating the Coleman-Liau index
     int index = 0.0588 * L - 0.296 * S - 15.8;
 
-    if(index <= 1){
+    if (index <= 1){
         printf("Before Grade 1");
-    }else if(index >= 16){
+    } else if (index >= 16) {
         printf("Grade 16+");
-    }else{
+    } else {
         printf("Grade %i\n", index);
     }
 
@@ -36,14 +36,14 @@ int main(void)
 
 }
 
-int count_letters(string s){
+int count_letters(string s) {
 
     int numberOfLetters = 0;
-    for(int i = 0, n = strlen(s); i < n; i++){
+    for (int i = 0, n = strlen(s); i < n; i++) {
         // making the full text lowercase
         // tolower(s[i]);
         // iterating through the text's characters
-        if(isalpha(s[i]) && !isspace(s[i])){
+        if (isalpha(s[i]) && !isspace(s[i])) {
             // printf("Current char: %c\n", s[i]);
             numberOfLetters++;
         }
@@ -57,17 +57,17 @@ int count_words(string s){
 
     int numberOfWords = 0;
     char connectors[4] ={'\'', '_', '-', '~'};
-    for(int i = 0, n = strlen(s); i < n; i++){
+    for (int i = 0, n = strlen(s); i < n; i++) {
         // iterating through the text's characters
-        if(i == 0){
+        if (i == 0){
             // do nothing
-        }else if(i == n){
+        } else if (i == n) {
             numberOfWords++;
         }
-        else if(!isalpha(s[i]) && isalpha(s[i-1])){
-            if(isConnector(s[i]) > 0 && isalpha(s[i-1]) && isalpha(s[i+1])){
+        else if (!isalpha(s[i]) && isalpha(s[i-1])) {
+            if (isConnector(s[i]) > 0 && isalpha(s[i-1]) && isalpha(s[i+1])) {
                 // do nothing
-            }else{
+            } else {
             numberOfWords++;
          }
         }
@@ -78,14 +78,14 @@ int count_words(string s){
 
 int count_sentences(string s){
 
-     int lengthOfArray = 3;
+    int lengthOfArray = 3;
     char endOfSentence[3] ={'.', '?', '!'};
 
     int numberOfSentences = 0;
-    for(int i = 0, n = strlen(s); i < n; i++){
+    for (int i = 0, n = strlen(s); i < n; i++) {
         // iterating through the text's characters
-        for(int j = 0; j < lengthOfArray; j++){
-        if(s[i] == endOfSentence[j]){
+        for (int j = 0; j < lengthOfArray; j++) {
+        if (s[i] == endOfSentence[j]){
             numberOfSentences++;
          }
         }
@@ -94,12 +94,12 @@ int count_sentences(string s){
     return numberOfSentences;
 }
 
-int isConnector(char c){
+int isConnector(char c) {
 
     int flag = 0;
     char connectors[4] ={'\'', '_', '-', '~'};
-    for(int i = 0; i < 4; i++){
-        if(connectors[i] == c){
+    for (int i = 0; i < 4; i++) {
+        if (connectors[i] == c) {
             flag = 1;
         }
     }
