@@ -34,4 +34,4 @@ To run the program:
  * cs50.h
  * string.h
  * ctype.h
- * [![C](https://img.shields.io/badge/-C-blue)]()
+ * [![C](https://img.shields.io/badge/-C-blue)](https://www.cprogramming.com/)
