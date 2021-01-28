@@ -31,7 +31,7 @@ To run the program:
  
  Libraries:
  * stdio.h
- * cs50.h
+ * <a href="https://github.com/cs50/libcs50>"cs50.h</a>
  * string.h
  * ctype.h
  * [![C](https://img.shields.io/badge/-C-blue)](https://www.cprogramming.com/)
