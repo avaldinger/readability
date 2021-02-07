@@ -20,10 +20,10 @@ The grade is calculated by the Coleman-Liau formula as it follows: `0.0588 * L -
 
 ### Setup
 
-The application can be ran locally or using the [![CS50 Badge](https://img.shields.io/badge/-CS50-red)](https://cs50.harvard.edu) <a href="https://ide.cs50.io">IDE</a> after logging in with your GitHub account.
+The application can be run locally or using the [![CS50 Badge](https://img.shields.io/badge/-CS50-red)](https://cs50.harvard.edu) <a href="https://ide.cs50.io">IDE</a> after logging in with your GitHub account.
 
 To run the program:
- 1. It needs to be complied: `$ make readability.c`
+ 1. It needs to be compiled: `$ make readability.c`
  2. Started with the selected key as an argument: `$ .Text: "This is an example"`
  3. Enter the text you would like to encrypt: `Grade 16+`
  
